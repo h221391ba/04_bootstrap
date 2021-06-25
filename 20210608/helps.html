@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>helps</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <style>
+      :root{
+          --primary-color: brown;
+      }
+      .wrapper{
+          background: lightblue;
+      }
+      .box{
+            width: 100px;
+            height: 100px;
+            background: pink;
+      }
+      .box2{
+        background: red;
+        height: 120px;
+      }
+      .ratio{
+          background: red;
+      }
+      .cover-fit{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      .primary{
+        --primary-color: rgb(103, 30, 185);
+          color: var(--primary-color);
+      }
+  </style>
+</head>
+<body>
+    <div class="wrapper clearfix">
+        <div class="box float-end"></div>
+    </div>
+    <a class="link-success" href="https://www.google.com">google</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="ratio ratio-1x1">
+                    <div>1x1</div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="ratio ratio-4x3">
+                    <div>
+                        <img class="cover-fit" src="/cover.jpg" alt="">
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="ratio" style="--bs-aspect-ratio: 120%;">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/COGXH8sZZ2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="primary" style="--primary-color: red">
+            Hello world!!
+        </div>
+    </div>
+</body>
+</html>
